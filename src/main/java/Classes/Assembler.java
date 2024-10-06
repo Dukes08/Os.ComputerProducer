@@ -2,60 +2,51 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.rivasduque.computerproducer;
+package Classes;
 
 import static java.lang.Thread.sleep;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author andresrivas
  */
-public class Worker extends Thread{
-    private int type;
+public class Assembler extends Thread{
     private float salaryAcumulate;
     private int dayDuration;
     private int quantityWorkers;
     private int salary;
+    private LogicHandler logicHandler;
     private int daysCounter;
     private int daysToFinishWork;
     private Semaphore mutex;
     
-    public Worker(int type, int dayDuration, int quantity, Semaphore mutex, int [] daysToFinish) {
-        this.type = type;
+    public Assembler(int dayDuration, int quantity, LogicHandler logicHandler, Semaphore mutex) {
         this.quantityWorkers = quantity;
-        this.daysToFinishWork = daysToFinish[type];
-        if (this.type == 0) {
-            this.salary = 20;
-        }
-        else if (this.type == 1) {
-            this.salary = 26;
-        }
-        else if (this.type == 2) {
-            this.salary = 40;
-        }
-        else if (this.type == 3) {
-            this.salary = 16;
-        }
-        else if (this.type == 4) {
-            this.salary = 34;
-        } 
         this.salaryAcumulate = 0;
         this.dayDuration = dayDuration;
+        this.logicHandler = logicHandler;
         this.daysCounter = 0;
         this.mutex = mutex;
+        this.salary = 50;
+        this.daysToFinishWork = 2;
     }
+    
     
     @Override
     public void run(){
         while(true) {
-            try {
+            try {  
                 paySalary();
-                work();
-                sleep(this.getDayDuration());
+                if (daysCounter == 0){
+                    if (check()){
+                        work();
+                    }
+                }else{
+                    work();
+                }
+                sleep(this.dayDuration);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -63,41 +54,43 @@ public class Worker extends Thread{
     }
     
     public void paySalary(){
-        //System.out.println("WORKER " + type + " Acumulado " + salaryAcumulate);
-        this.setSalaryAcumulate(this.getSalaryAcumulate() + ((this.getSalary() * 24)) * this.getQuantityWorkers());
+        this.salaryAcumulate = this.salaryAcumulate + ((this.salary * 24) * this.quantityWorkers);
     }
     
     public void work(){
-        this.setDaysCounter(this.getDaysCounter() + 1);
-        if (this.getDaysCounter() == this.getDaysToFinishWork()){ // ese valor de 2 depende de la compania
+        this.daysCounter = this.daysCounter + 1;
+        if (this.daysCounter == this.daysToFinishWork){ // ese valor de 2 depende de la compania
             try {
-                this.getMutex().acquire(); //wait
-                this.getMutex().release(); // signal
-                this.setDaysCounter(0);
+                this.mutex.acquire(); //wait
+                this.logicHandler.produceComputer(this.quantityWorkers); //critica
+                this.mutex.release(); // signal
+                this.daysCounter = 0;
             } catch (InterruptedException ex) {
                 Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
             }
         }   
     }
+    
+    public boolean check(){
+        boolean ready = false;
+        try {
+            this.mutex.acquire(); //wait
+            ready = this.logicHandler.checkRequirements();
+            this.mutex.release(); // signal
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return ready;
+    }
      
     public void deleteWorker() {
-        if (this.getQuantityWorkers() != 1) {
-            this.setQuantityWorkers(this.quantityWorkers - 1);
-        } else {
-            JOptionPane.showMessageDialog(null, "NO SE PUEDE DEJAR UN DEPARTAMENTO SIN TRABAJADORES");
+        if (this.quantityWorkers != 1) {
+            this.quantityWorkers = this.quantityWorkers - 1;
         }
     }
     
     public void addWorker(){
-        this.setQuantityWorkers(quantityWorkers + 1);
-    }
-
-    public int getType() {
-        return type;
-    }
-
-    public void setType(int type) {
-        this.type = type;
+        this.quantityWorkers = this.quantityWorkers + 1;
     }
 
     public float getSalaryAcumulate() {
@@ -132,6 +125,14 @@ public class Worker extends Thread{
         this.salary = salary;
     }
 
+    public LogicHandler getLogicHandler() {
+        return logicHandler;
+    }
+
+    public void setLogicHandler(LogicHandler logicHandler) {
+        this.logicHandler = logicHandler;
+    }
+
     public int getDaysCounter() {
         return daysCounter;
     }
@@ -157,5 +158,5 @@ public class Worker extends Thread{
     }
     
     
-    
+
 }
