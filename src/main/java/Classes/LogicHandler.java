@@ -20,10 +20,11 @@ public class LogicHandler {
     private int counterGraphiCard;
     private int graphicCardOnUse;
     private int computers;
+    private Company company;
     private int [] requirements;
     private JLabel [] labels;
     
-    public LogicHandler(int [] requirements){
+    public LogicHandler(int [] requirements, Company company){
         this.motherBoards = 0;
         this.cpus = 0;
         this.rams = 0;
@@ -33,6 +34,7 @@ public class LogicHandler {
         this.counterGraphiCard = 0;
         this.computers = 0;
         this.requirements = requirements;
+        this.company = company;
     }
     
     public void createComponent (int componentType, int workersAmount){
@@ -162,6 +164,16 @@ public class LogicHandler {
         }
         
         return quantity;
+    }
+    
+    public void sendComputer() {
+        this.company.setRevenue(this.company.getRevenue()+ (this.company.getComputerPrice()*computers));
+        this.company.setRevenue(this.company.getRevenue() + this.company.getGraphiCardPrice()*graphicCardOnUse);
+        this.labels[7].setText(Integer.toString(this.company.getRevenue()));
+        computers = 0;
+        graphicCardOnUse = 0;
+        this.labels[5].setText(Integer.toString(computers));
+        this.labels[6].setText(Integer.toString(graphicCardOnUse));
     }
     
     /**
