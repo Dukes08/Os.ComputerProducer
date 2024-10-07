@@ -13,7 +13,7 @@ import javax.swing.JLabel;
  *
  * @author hugoduque
  */
-public class ProjectManager {
+public class ProjectManager extends Thread{
     private float salaryAcumulate;
     private int dayDuration;
     private int salary;
