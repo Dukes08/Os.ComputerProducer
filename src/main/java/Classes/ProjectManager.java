@@ -53,6 +53,32 @@ public class ProjectManager {
         }
         
     }
+    
+    public void calculate(){
+         try {
+            this.mutex3.acquire(); //wait
+            this.company.costAnalytics(); //critica
+            this.labels[1].setText(Integer.toString(this.company.getCosts()));
+            this.company.utilidadesTotales();
+            this.labels[2].setText(Integer.toString(this.company.getUtility()));
+            this.mutex3.release(); // signal
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+        }
+     }
+       
+       
+    public void work(){
+        try {
+            this.mutex2.acquire(); //wait
+            this.company.setDeadline(this.company.getDeadline() - 1); //critica
+            this.labels[3].setText(Integer.toString(this.company.getDeadline()));
+            this.mutex2.release(); // signal
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 
     /**
      * @return the salaryAcumulate
