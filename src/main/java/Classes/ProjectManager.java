@@ -79,6 +79,41 @@ public class ProjectManager extends Thread{
         }
         
     }
+    
+    @Override
+    public void run(){
+        while(true) {
+            try {
+                paySalary();
+                calculate();
+                // first 16 hours
+                long startTime = System.currentTimeMillis();
+                while(System.currentTimeMillis() - startTime <= ((dayDuration/24)*16)){
+                    status = "Viendo anime";
+                    this.labels[0].setText(status);
+                    sleep(((dayDuration/24)/2));
+
+                    status = "Reviewing";
+                    this.labels[0].setText(status);
+                    // check();
+                    sleep(((dayDuration/24)/2));
+                }
+                
+                // Restantes 8 horas
+                status = "Working";
+                this.labels[0].setText(status);
+                work();
+                setDaysPassedTotal(getDaysPassedTotal() + 1);
+                this.labels[4].setText(Integer.toString(getDaysPassedTotal()));
+                if (company.getMaxWorkers() == 13) {
+                    this.labels[5].setText(Integer.toString(getDaysPassedTotal()));
+                }
+                sleep((dayDuration/24)*8);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
 
     /**
      * @return the salaryAcumulate
