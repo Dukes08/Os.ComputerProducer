@@ -81,7 +81,7 @@ public class ProjectManager extends Thread{
     }
     
     @Override
-    public void run(){
+    public void start(){
         while(true) {
             try {
                 paySalary();
