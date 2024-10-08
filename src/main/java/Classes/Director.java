@@ -62,7 +62,7 @@ public class Director extends Thread{
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    
     /**
      * @return the salaryAcumulate
      */
