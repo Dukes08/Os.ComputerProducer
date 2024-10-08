@@ -49,7 +49,7 @@ public class Director extends Thread{
         this.setSalaryAcumulate(this.getSalaryAcumulate() + (this.getSalary() * 24));
     }
     
-    public void checkDeadline(){
+    public void deadlineCheck(){
         try {
             this.getMutex2().acquire(); //wait
             if (this.getCompany().getDeadline() == 0) {
