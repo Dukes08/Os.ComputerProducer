@@ -45,6 +45,41 @@ public class Director extends Thread{
         this.directorMode = false;
     }
     
+         @Override
+    public void run(){
+        while(true) {
+            try {  
+                paySalary();
+                deadlineCheck();
+                if (directorMode) {
+                    status = "Enviando Computadoras";
+                    this.labels[0].setText(status);
+                    work();
+                    sleep(this.dayDuration);
+                }else{
+                    double randomHour = Math.random( )*23;
+                    int random = (int)randomHour;
+                    sleep((this.dayDuration*random)/24);
+                    
+                    status = "Revisando Project Manager";
+                    this.labels[0].setText(status);
+                    checkPM();
+                    sleep((dayDuration*30)/(24*60));
+                    checkPM();
+                    sleep((dayDuration*5)/(24*60));                    
+                    
+                    status = "Labores Administrativos";
+                    this.labels[0].setText(status);
+                    sleep((dayDuration*25)/(60*24));
+                    sleep((this.dayDuration*(23-random))/24);
+                }
+                
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
     public void paySalary(){
         this.setSalaryAcumulate(this.getSalaryAcumulate() + (this.getSalary() * 24));
     }
