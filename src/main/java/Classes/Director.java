@@ -63,6 +63,37 @@ public class Director extends Thread{
         }
     }
     
+    public void work(){
+        this.daysCounter = this.daysCounter + 1;
+        if (this.daysCounter == this.daysToFinishWork){ 
+            try {
+                this.mutex.acquire(); //wait
+                getLogicHandler().sendComputer();
+                this.mutex.release(); // signal
+                this.daysCounter = 0;
+                directorMode = false;
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }   
+    }
+    
+    public void checkPM(){
+        if (company.getProjectManager().getStatus().equals("Viendo Anime")){
+            company.getProjectManager().setFault(company.getProjectManager().getFault() + 1);
+            this.labels[2].setText(Integer.toString(company.getProjectManager().getFault()));
+            company.getProjectManager().setDiscounted(company.getProjectManager().getDiscounted() + 100); 
+            this.labels[3].setText(Integer.toString(company.getProjectManager().getDiscounted()));
+            try {
+                this.mutex3.acquire(); //wait
+                company.getProjectManager().setSalaryAcumulate(company.getProjectManager().getSalaryAcumulate() - 100);//critica   
+                this.mutex3.release(); // signal
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
     /**
      * @return the salaryAcumulate
      */
