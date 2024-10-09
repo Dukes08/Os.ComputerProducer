@@ -17,7 +17,7 @@ public class Company extends Thread{
     private Worker powerSourceMakers;
     private Worker graphicCardMakers;
     private Assembler ensambladores; 
-    
+    private ProjectManager projectManager;
     private int [] requirements;
     private int [] daysToFinishWork;
     private int [] initialAmount;
@@ -69,7 +69,8 @@ public class Company extends Thread{
         setPowerSourceMakers(new Worker(3, getDayDuration(), getInitialAmount()[3], getLogicHandler(), getMutex(), getDaysToFinishWork()));
         setGraphicCardMakers(new Worker(4, getDayDuration(), getInitialAmount()[4], getLogicHandler(), getMutex(), getDaysToFinishWork()));
         setEnsambladores(new Assembler(getDayDuration(), getInitialAmount()[5], getLogicHandler(), getMutex()));
-        //project manager and director missing
+        projectManager = new ProjectManager(dayDuration, mutex, mutex2, mutex3, this);
+        //director missing
     }
     
     public void workersStart() {
@@ -79,7 +80,8 @@ public class Company extends Thread{
         getPowerSourceMakers().start();
         getGraphicCardMakers().start();
         getEnsambladores().start();  
-        //pm and director missing
+        projectManager.start();  
+        //director missing
     }
     
     public void addWorkers(int type) {
@@ -107,6 +109,14 @@ public class Company extends Thread{
             JOptionPane.showMessageDialog(null, "SE HA SUPERADO LA CANTIDAD LIMITE DE TRABAJADORES!");
         }
     }  
+
+    public ProjectManager getProjectManager() {
+        return projectManager;
+    }
+
+    public void setProjectManager(ProjectManager projectManager) {
+        this.projectManager = projectManager;
+    }
 
     /**
      * @return the motherBoardMakers
