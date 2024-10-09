@@ -59,11 +59,11 @@ public class Main {
             requirementsApple[5] = 5;
 
             int [] daysToFinsihApple = new int[5]; 
-            daysToFinsihApple[0] = 2;
-            daysToFinsihApple[1] = 2;
+            daysToFinsihApple[0] = 4;
+            daysToFinsihApple[1] = 4;
             daysToFinsihApple[2] = 1;
             daysToFinsihApple[3] = 1;
-            daysToFinsihApple[4] = 3;
+            daysToFinsihApple[4] = 2;
 
 
             Company Apple = new Company(requirementsApple, daysToFinsihApple, initialQuantityApple, 10, dayDuration, 100000, 150000, deadline);
@@ -85,11 +85,11 @@ public class Main {
             requirementsHp[5] = 2;
 
             int [] daysToFinoshHp = new int[5]; 
-            daysToFinoshHp[0] = 2;
-            daysToFinoshHp[1] = 2;
+            daysToFinoshHp[0] = 4;
+            daysToFinoshHp[1] = 4;
             daysToFinoshHp[2] = 1;
             daysToFinoshHp[3] = 1;
-            daysToFinoshHp[4] = 3;
+            daysToFinoshHp[4] = 2;
 
             Company Hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
 
