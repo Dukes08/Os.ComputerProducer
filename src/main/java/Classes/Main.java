@@ -4,6 +4,7 @@
  */
 package Classes;
 
+import Interface.Interface;
 import java.io.FileReader;
 
 /**
@@ -66,7 +67,7 @@ public class Main {
             daysToFinsihApple[4] = 2;
 
 
-            Company Apple = new Company(requirementsApple, daysToFinsihApple, initialQuantityApple, 10, dayDuration, 100000, 150000, deadline);
+            Company apple = new Company(requirementsApple, daysToFinsihApple, initialQuantityApple, 10, dayDuration, 100000, 150000, deadline);
 
             int [] initialQuantityHp= new int [6];
 
@@ -91,8 +92,9 @@ public class Main {
             daysToFinoshHp[3] = 1;
             daysToFinoshHp[4] = 2;
 
-            Company Hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
-
+            Company hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
+            Interface main = new Interface(apple, hp, initialQuantityApple, initialQuantityHp);
+            main.show();
 //          
 
         } catch (Exception e){

@@ -28,6 +28,7 @@ public class ProjectManager extends Thread{
     private Company company;
     private Semaphore mutex2;
     private Semaphore mutex3;
+    private GraphManager grafico;
     
     public ProjectManager(int dayDuration, Semaphore mutex, Semaphore mutex2, Semaphore mutex3, Company company){
         this.salaryAcumulate = 0;
@@ -107,6 +108,7 @@ public class ProjectManager extends Thread{
                 this.labels[4].setText(Integer.toString(getDaysPassedTotal()));
                 if (company.getMaxWorkers() == 13) {
                     this.labels[5].setText(Integer.toString(getDaysPassedTotal()));
+                    this.grafico.actualizarGrafico();
                 }
                 sleep((dayDuration/24)*8);
             } catch (InterruptedException ex) {
@@ -310,4 +312,14 @@ public class ProjectManager extends Thread{
     public void setMutex3(Semaphore mutex3) {
         this.mutex3 = mutex3;
     }
+
+    public GraphManager getGrafico() {
+        return grafico;
+    }
+
+    public void setGrafico(GraphManager grafico) {
+        this.grafico = grafico;
+    }
+    
+    
 }

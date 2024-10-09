@@ -18,6 +18,7 @@ public class Company extends Thread{
     private Worker graphicCardMakers;
     private Assembler ensambladores; 
     private ProjectManager projectManager;
+    private Director director;
     private int [] requirements;
     private int [] daysToFinishWork;
     private int [] initialAmount;
@@ -70,7 +71,7 @@ public class Company extends Thread{
         setGraphicCardMakers(new Worker(4, getDayDuration(), getInitialAmount()[4], getLogicHandler(), getMutex(), getDaysToFinishWork()));
         setEnsambladores(new Assembler(getDayDuration(), getInitialAmount()[5], getLogicHandler(), getMutex()));
         projectManager = new ProjectManager(dayDuration, mutex, mutex2, mutex3, this);
-        //director missing
+        director = new Director(dayDuration, logicHandler, mutex, mutex2, mutex3, this);
     }
     
     public void workersStart() {
@@ -81,7 +82,7 @@ public class Company extends Thread{
         getGraphicCardMakers().start();
         getEnsambladores().start();  
         projectManager.start();  
-        //director missing
+        director.start();
     }
     
     public void addWorkers(int type) {
@@ -411,6 +412,16 @@ public class Company extends Thread{
     public void setLogicHandler(LogicHandler logicHandler) {
         this.logicHandler = logicHandler;
     }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+    
+    
 }
 
 
