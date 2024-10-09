@@ -66,7 +66,7 @@ public class Main {
             daysToFinsihApple[4] = 3;
 
 
-            Company Apple = new Company(requirementsApple, daysToFinsihApple, initialQuantityApple, 12, dayDuration, 100000, 150000, deadline);
+            Company Apple = new Company(requirementsApple, daysToFinsihApple, initialQuantityApple, 10, dayDuration, 100000, 150000, deadline);
 
             int [] initialQuantityHp= new int [6];
 
@@ -84,14 +84,14 @@ public class Main {
             requirementsHp[4] = 3;
             requirementsHp[5] = 2;
 
-            int [] daysToFinishHp = new int[5]; 
-            daysToFinishHp[0] = 2;
-            daysToFinishHp[1] = 2;
-            daysToFinishHp[2] = 1;
-            daysToFinishHp[3] = 1;
-            daysToFinishHp[4] = 3;
+            int [] daysToFinoshHp = new int[5]; 
+            daysToFinoshHp[0] = 2;
+            daysToFinoshHp[1] = 2;
+            daysToFinoshHp[2] = 1;
+            daysToFinoshHp[3] = 1;
+            daysToFinoshHp[4] = 3;
 
-            Company disney = new Company(requirementsHp, daysToFinishHp, initialQuantityHp, 13, dayDuration, 80000, 140000, deadline);
+            Company Hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
 
 //          
 
