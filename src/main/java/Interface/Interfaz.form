@@ -1212,26 +1212,26 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="motherBoardMakersQtty4" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cpuMakersAppleQtty8" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="motherBoardMakersQttySavedHp" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cpuMakersQttySavedHp" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="graphiCardMakersAppleQtty3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="graphiCardMakersHpQttySaveHp" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="ramMakersAppleQtty3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="powerSourceMakersAppleQtty3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="ramMakersHpQttySavedHp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="powerSourceMakersHpQttySavedHp" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
                                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="assemblersAppleQtty11" min="-2" max="-2" attributes="0"/>
+                                          <Component id="specialComputersQttySavedHp" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1239,7 +1239,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="assemblersAppleQtty10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="basicComputersQttySavedHp" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -1278,37 +1278,37 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="motherBoardMakersQtty4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="motherBoardMakersQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cpuMakersQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="ramMakersAppleQtty3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ramMakersHpQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="powerSourceMakersAppleQtty3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="powerSourceMakersHpQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="graphiCardMakersAppleQtty3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="graphiCardMakersHpQttySaveHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel68" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="assemblersAppleQtty10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="basicComputersQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel69" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                              <Component id="assemblersAppleQtty11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="specialComputersQttySavedHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1364,7 +1364,7 @@
                     <Property name="text" type="java.lang.String" value="Placas Base Guardadas:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="motherBoardMakersQtty4">
+                <Component class="javax.swing.JLabel" name="motherBoardMakersQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1380,7 +1380,7 @@
                     <Property name="text" type="java.lang.String" value="CPUs Guardados"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty8">
+                <Component class="javax.swing.JLabel" name="cpuMakersQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1396,7 +1396,7 @@
                     <Property name="text" type="java.lang.String" value="Productores de memoria RAM:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="ramMakersAppleQtty3">
+                <Component class="javax.swing.JLabel" name="ramMakersHpQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1412,7 +1412,7 @@
                     <Property name="text" type="java.lang.String" value="Productores de Fuente de Alimentacion:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="powerSourceMakersAppleQtty3">
+                <Component class="javax.swing.JLabel" name="powerSourceMakersHpQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1428,7 +1428,7 @@
                     <Property name="text" type="java.lang.String" value="Tarjetas Graficas Guardadas:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="graphiCardMakersAppleQtty3">
+                <Component class="javax.swing.JLabel" name="graphiCardMakersHpQttySaveHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1452,7 +1452,7 @@
                     <Property name="text" type="java.lang.String" value="Computadores con TarjetaG:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="assemblersAppleQtty10">
+                <Component class="javax.swing.JLabel" name="basicComputersQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1460,7 +1460,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="assemblersAppleQtty11">
+                <Component class="javax.swing.JLabel" name="specialComputersQttySavedHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1580,7 +1580,7 @@
                                               <Group type="102" attributes="0">
                                                   <Component id="jLabel76" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
-                                                  <Component id="motherBoardMakersQtty5" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="salesHp" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -1591,11 +1591,11 @@
                                                   </Group>
                                                   <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="1" attributes="0">
-                                                      <Component id="cpuMakersAppleQtty12" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cpuMakersAppleQtty13" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cpuMakersAppleQtty11" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cpuMakersAppleQtty10" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="cpuMakersAppleQtty9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hpDeadlineLable" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hpPmDiscountLable" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="hpDaysPassedLable" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="utilityHp" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="costHp" alignment="1" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -1616,32 +1616,32 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="motherBoardMakersQtty5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="salesHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel77" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="costHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel78" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="utilityHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel79" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hpDaysPassedLable" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel80" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hpDeadlineLable" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="41" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty13" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hpPmDiscountLable" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       </Group>
@@ -1668,7 +1668,7 @@
                     <Property name="text" type="java.lang.String" value="Ventas Totales:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="motherBoardMakersQtty5">
+                <Component class="javax.swing.JLabel" name="salesHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1684,7 +1684,7 @@
                     <Property name="text" type="java.lang.String" value="Costos:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty9">
+                <Component class="javax.swing.JLabel" name="costHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1700,7 +1700,7 @@
                     <Property name="text" type="java.lang.String" value="Utilidad:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty10">
+                <Component class="javax.swing.JLabel" name="utilityHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1716,7 +1716,7 @@
                     <Property name="text" type="java.lang.String" value="Dias transcurridos:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty11">
+                <Component class="javax.swing.JLabel" name="hpDaysPassedLable">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1732,7 +1732,7 @@
                     <Property name="text" type="java.lang.String" value="Deadline:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty12">
+                <Component class="javax.swing.JLabel" name="hpDeadlineLable">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1748,7 +1748,7 @@
                     <Property name="text" type="java.lang.String" value="Descuento al Pm:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty13">
+                <Component class="javax.swing.JLabel" name="hpPmDiscountLable">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1787,7 +1787,7 @@
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="removeRam5" min="-2" pref="23" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="ramMakersAppleQtty2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ramMakersHpQtty2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="addRam5" min="-2" pref="25" max="-2" attributes="0"/>
                                       </Group>
@@ -1796,7 +1796,7 @@
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="removeCpu5" min="-2" pref="23" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cpuMakersAppleQtty7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cpuMakersQttyHp" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="addCpu5" min="-2" pref="25" max="-2" attributes="0"/>
                                       </Group>
@@ -1826,17 +1826,17 @@
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="powerSourceMakersAppleQtty2" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="powerSourceMakersHpQtty2" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Component id="addPowSour5" min="-2" pref="25" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="graphiCardMakersAppleQtty2" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="graphiCardMakersHpQtty2" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="addGraphiCard6" min="-2" pref="25" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="assemblersAppleQtty2" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="assemblersHpQtty2" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="addAssembler7" min="-2" pref="25" max="-2" attributes="0"/>
                                               </Group>
@@ -1855,7 +1855,7 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="pmStatus3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="pmStatusHp" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
@@ -1866,14 +1866,14 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="directorAppleQtty2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="directorStatus2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="directorStatusHp" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="pmFaults2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pmFaultsHp" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -1896,21 +1896,21 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="removeCpu5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="cpuMakersAppleQtty7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cpuMakersQttyHp" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="addCpu5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="removeRam5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="ramMakersAppleQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ramMakersHpQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="addRam5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="removePowSour5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="powerSourceMakersAppleQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="powerSourceMakersHpQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="addPowSour5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -1918,14 +1918,14 @@
                               <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="removeGraphiCard6" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="addGraphiCard6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="graphiCardMakersAppleQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="graphiCardMakersHpQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="removeAssembler7" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="addAssembler7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="assemblersAppleQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="assemblersHpQtty2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="22" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1937,14 +1937,14 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="directorStatus2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="directorStatusHp" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pmStatus3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="pmStatusHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pmFaults2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="pmFaultsHp" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                       </Group>
@@ -2011,7 +2011,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeCpu5ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cpuMakersAppleQtty7">
+                <Component class="javax.swing.JLabel" name="cpuMakersQttyHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2043,7 +2043,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeRam5ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="ramMakersAppleQtty2">
+                <Component class="javax.swing.JLabel" name="ramMakersHpQtty2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2075,7 +2075,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removePowSour5ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="powerSourceMakersAppleQtty2">
+                <Component class="javax.swing.JLabel" name="powerSourceMakersHpQtty2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2123,7 +2123,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addGraphiCard6ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="graphiCardMakersAppleQtty2">
+                <Component class="javax.swing.JLabel" name="graphiCardMakersHpQtty2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2147,7 +2147,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAssembler7ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JLabel" name="assemblersAppleQtty2">
+                <Component class="javax.swing.JLabel" name="assemblersHpQtty2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2195,7 +2195,7 @@
                     <Property name="text" type="java.lang.String" value="DirectorStatus:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="directorStatus2">
+                <Component class="javax.swing.JLabel" name="directorStatusHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2211,7 +2211,7 @@
                     <Property name="text" type="java.lang.String" value="PmStatus:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="pmStatus3">
+                <Component class="javax.swing.JLabel" name="pmStatusHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2227,7 +2227,7 @@
                     <Property name="text" type="java.lang.String" value="Project Manager fouls:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="pmFaults2">
+                <Component class="javax.swing.JLabel" name="pmFaultsHp">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
