@@ -63,9 +63,9 @@ public class LogicHandler {
         }
         //Add RAM
         else if(componentType == 2 && this.getRams()< 55){
-            int cpusAmount = this.getRams() + (1*workersAmount);
-            if(cpusAmount < 55){
-                this.setCpus(cpusAmount);
+            int ramsAmount = this.getRams() + (1*workersAmount);
+            if(ramsAmount < 55){
+                this.setRams(ramsAmount);
             }else{
                  this.setCpus(55);
             }
@@ -76,7 +76,7 @@ public class LogicHandler {
             //times 5 because each worker create 5 ps
             int psAmount = this.getPowerSource()+ (5*workersAmount);
             if(psAmount < 35){
-                this.setCpus(psAmount);
+                this.setPowerSource(psAmount);
             }else{
                  this.setPowerSource(35);
             }

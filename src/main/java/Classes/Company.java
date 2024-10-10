@@ -84,8 +84,8 @@ public class Company extends Thread{
           powerSourceMakers.start();
           graphicCardMakers.start();
           ensambladores.start();  
-//        projectManager.start();  
-//        director.start();
+          projectManager.start();  
+          director.start();
     }
     
     public void addWorkers(int type) {

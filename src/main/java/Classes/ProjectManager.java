@@ -46,9 +46,9 @@ public class ProjectManager extends Thread{
     
     public void paySalary(){
         try {
-            this.getMutex3().acquire(); //wait
-            setSalaryAcumulate(this.getSalaryAcumulate() + (this.getSalary() * 24));
-            this.getMutex3().release(); // signal
+            this.mutex3.acquire(); //wait
+            salaryAcumulate = this.salaryAcumulate + (this.salary* 24); //critica
+            this.mutex3.release(); // signal
         } catch (InterruptedException ex) {
             Logger.getLogger(Worker.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -90,7 +90,7 @@ public class ProjectManager extends Thread{
                 // first 16 hours
                 long startTime = System.currentTimeMillis();
                 while(System.currentTimeMillis() - startTime <= ((dayDuration/24)*16)){
-                    status = "Viendo anime";
+                    status = "Viendo Anime";
                     this.labels[0].setText(status);
                     sleep(((dayDuration/24)/2));
 

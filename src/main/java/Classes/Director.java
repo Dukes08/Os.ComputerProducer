@@ -61,7 +61,7 @@ public class Director extends Thread{
                     int random = (int)randomHour;
                     sleep((this.dayDuration*random)/24);
                     
-                    status = "Revisando Project Manager";
+                    status = "Revisando PM";
                     this.labels[0].setText(status);
                     checkPM();
                     sleep((dayDuration*30)/(24*60));
