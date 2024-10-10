@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package Classes;
-import Interface.MainInterface;
+import Interface.Interfaz;
 import java.io.FileReader;
 /**
  *
@@ -91,8 +91,7 @@ public class Main {
             daysToFinoshHp[4] = 2;
 
             Company hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
-           
-           MainInterface i = new MainInterface(apple, hp, initialQuantityApple, initialQuantityHp);
+           Interfaz i = new Interfaz(apple, hp, initialQuantityApple, initialQuantityHp);
            i.show();
 
         } catch (Exception e){
