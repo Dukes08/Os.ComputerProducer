@@ -106,7 +106,7 @@ public class ProjectManager extends Thread{
                 work();
                 setDaysPassedTotal(getDaysPassedTotal() + 1);
                 this.labels[4].setText(Integer.toString(getDaysPassedTotal()));
-                if (company.getMaxWorkers() == 13) {
+                if (company.getMaxWorkers() == 11) {
                     this.labels[5].setText(Integer.toString(getDaysPassedTotal()));
                     this.grafico.actualizarGrafico();
                 }

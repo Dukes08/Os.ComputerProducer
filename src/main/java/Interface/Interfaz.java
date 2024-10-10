@@ -46,7 +46,7 @@ public class Interfaz extends javax.swing.JFrame {
         JLabel[] directorLabelsHp = {directorStatusHp, hpDeadlineLable, pmFaultsHp, hpPmDiscountLable};
         hp.getDirector().setLabels(directorLabelsHp);
         
-        GraphManager grafico = new GraphManager(Grafico, apple, hp);
+        GraphManager grafico = new GraphManager(Graph, apple, hp);
         hp.getProjectManager().setGrafico(grafico);
         
         apple.workersStart();
@@ -100,7 +100,7 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel82 = new javax.swing.JLabel();
         daysPassedGrafico = new javax.swing.JLabel();
-        Grafico = new javax.swing.JPanel();
+        Graph = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
@@ -323,16 +323,16 @@ public class Interfaz extends javax.swing.JFrame {
 
         daysPassedGrafico.setText("0");
 
-        Grafico.setBackground(new java.awt.Color(153, 255, 255));
+        Graph.setBackground(new java.awt.Color(153, 255, 255));
 
-        javax.swing.GroupLayout GraficoLayout = new javax.swing.GroupLayout(Grafico);
-        Grafico.setLayout(GraficoLayout);
-        GraficoLayout.setHorizontalGroup(
-            GraficoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout GraphLayout = new javax.swing.GroupLayout(Graph);
+        Graph.setLayout(GraphLayout);
+        GraphLayout.setHorizontalGroup(
+            GraphLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 710, Short.MAX_VALUE)
         );
-        GraficoLayout.setVerticalGroup(
-            GraficoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        GraphLayout.setVerticalGroup(
+            GraphLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 412, Short.MAX_VALUE)
         );
 
@@ -349,7 +349,7 @@ public class Interfaz extends javax.swing.JFrame {
                         .addComponent(daysPassedGrafico))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(208, 208, 208)
-                        .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(262, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -360,7 +360,7 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jLabel82)
                     .addComponent(daysPassedGrafico))
                 .addGap(18, 18, 18)
-                .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(242, Short.MAX_VALUE))
         );
 
@@ -2626,7 +2626,7 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Grafico;
+    private javax.swing.JPanel Graph;
     private javax.swing.JButton addAssembler1;
     private javax.swing.JButton addAssembler2;
     private javax.swing.JButton addAssembler6;
