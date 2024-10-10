@@ -101,6 +101,7 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel82 = new javax.swing.JLabel();
         daysPassedGrafico = new javax.swing.JLabel();
         Graph = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
@@ -178,6 +179,7 @@ public class Interfaz extends javax.swing.JFrame {
         appleDeadlineLable = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         applePmDiscountLable = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
@@ -255,6 +257,7 @@ public class Interfaz extends javax.swing.JFrame {
         pmStatusHp = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         pmFaultsHp = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -316,12 +319,21 @@ public class Interfaz extends javax.swing.JFrame {
         assemblersHp = new javax.swing.JLabel();
         addAssembler2 = new javax.swing.JButton();
         txt = new javax.swing.JButton();
+        jLabel83 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel82.setText("Dias transcurridos: ");
+        jPanel4.setLayout(null);
 
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setText("Dias transcurridos: ");
+        jPanel4.add(jLabel82);
+        jLabel82.setBounds(432, 51, 150, 17);
+
+        daysPassedGrafico.setForeground(new java.awt.Color(255, 255, 255));
         daysPassedGrafico.setText("0");
+        jPanel4.add(daysPassedGrafico);
+        daysPassedGrafico.setBounds(588, 51, 40, 17);
 
         Graph.setBackground(new java.awt.Color(153, 255, 255));
 
@@ -336,37 +348,17 @@ public class Interfaz extends javax.swing.JFrame {
             .addGap(0, 412, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(468, 468, 468)
-                        .addComponent(jLabel82)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(daysPassedGrafico))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(208, 208, 208)
-                        .addComponent(Graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(262, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel82)
-                    .addComponent(daysPassedGrafico))
-                .addGap(18, 18, 18)
-                .addComponent(Graph, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(242, Short.MAX_VALUE))
-        );
+        jPanel4.add(Graph);
+        Graph.setBounds(210, 90, 710, 412);
+
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Money.jpg"))); // NOI18N
+        jPanel4.add(jLabel86);
+        jLabel86.setBounds(-10, 0, 1180, 790);
 
         jTabbedPane1.addTab("Apple vs Hp", jPanel4);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(null);
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -563,6 +555,9 @@ public class Interfaz extends javax.swing.JFrame {
                         .addComponent(ramsMaxQttyApple)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel2.add(jPanel5);
+        jPanel5.setBounds(514, 22, 310, 422);
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -871,6 +866,9 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(76, 76, 76))
         );
 
+        jPanel2.add(jPanel6);
+        jPanel6.setBounds(17, 22, 429, 420);
+
         jPanel7.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel43.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
@@ -974,31 +972,17 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(296, Short.MAX_VALUE))
-        );
+        jPanel2.add(jPanel7);
+        jPanel7.setBounds(859, 22, 287, 422);
+
+        jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Apple Fondo.jpeg"))); // NOI18N
+        jLabel87.setText("jLabel87");
+        jPanel2.add(jLabel87);
+        jLabel87.setBounds(0, -30, 1180, 730);
 
         jTabbedPane1.addTab("Apple", jPanel2);
+
+        jPanel3.setLayout(null);
 
         jPanel9.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1198,6 +1182,9 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel3.add(jPanel9);
+        jPanel9.setBounds(390, 40, 327, 422);
+
         jPanel10.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel75.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
@@ -1310,6 +1297,9 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(hpPmDiscountLable))
                 .addGap(15, 15, 15))
         );
+
+        jPanel3.add(jPanel10);
+        jPanel10.setBounds(730, 40, 319, 422);
 
         jPanel8.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1618,67 +1608,93 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(76, 76, 76))
         );
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(130, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(301, Short.MAX_VALUE))
-        );
+        jPanel3.add(jPanel8);
+        jPanel8.setBounds(0, 40, 374, 420);
+
+        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/HpF.jpg"))); // NOI18N
+        jPanel3.add(jLabel84);
+        jLabel84.setBounds(-270, 0, 1450, 730);
 
         jTabbedPane1.addTab("Hp", jPanel3);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         jLabel1.setText("CONFIGURACION");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(530, 30, 197, 34);
 
         jLabel2.setText("APPLE");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(187, 63, 39, 17);
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("HP");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(1082, 63, 17, 17);
 
         jLabel4.setText("Productores Placa Base:");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(15, 101, 200, 17);
 
         jLabel5.setText("Productores de CPU:");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(15, 142, 180, 17);
 
         jLabel6.setText("Productores de memoria RAM:");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(15, 186, 220, 17);
 
         jLabel7.setText("Productores de Fuente de Alimentacion:");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(15, 219, 260, 17);
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Productores de Tarjetas Graficas:");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(809, 260, 250, 17);
 
         jLabel9.setText("Ensambladores:");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(15, 289, 110, 17);
 
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Productores Placa Base:");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(797, 101, 210, 17);
 
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Productores de CPU:");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(796, 142, 190, 17);
 
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Productores de memoria RAM:");
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(802, 186, 240, 17);
 
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Productores de Fuente de Alimentacion:");
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(796, 219, 300, 17);
 
         jLabel14.setText("Productores de Tarjetas Graficas:");
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(15, 260, 250, 17);
 
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Ensambladores:");
+        jPanel1.add(jLabel15);
+        jLabel15.setBounds(818, 289, 140, 17);
 
         jLabel16.setText("Duracion del dia:");
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(460, 320, 120, 17);
 
         jLabel17.setText("Deadline:");
+        jPanel1.add(jLabel17);
+        jLabel17.setBounds(460, 360, 80, 17);
 
         removeMB2.setText("-");
         removeMB2.addActionListener(new java.awt.event.ActionListener() {
@@ -1686,6 +1702,8 @@ public class Interfaz extends javax.swing.JFrame {
                 removeMB2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeMB2);
+        removeMB2.setBounds(230, 100, 23, 23);
 
         addMb2.setText("+");
         addMb2.addActionListener(new java.awt.event.ActionListener() {
@@ -1693,8 +1711,12 @@ public class Interfaz extends javax.swing.JFrame {
                 addMb2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addMb2);
+        addMb2.setBounds(280, 100, 23, 23);
 
         motherBoardMakersApple.setText("0");
+        jPanel1.add(motherBoardMakersApple);
+        motherBoardMakersApple.setBounds(260, 100, 13, 17);
 
         removeCpu1.setText("-");
         removeCpu1.addActionListener(new java.awt.event.ActionListener() {
@@ -1702,8 +1724,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeCpu1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeCpu1);
+        removeCpu1.setBounds(230, 140, 23, 23);
 
         cpuMakersApple.setText("0");
+        jPanel1.add(cpuMakersApple);
+        cpuMakersApple.setBounds(267, 140, 10, 17);
 
         addCpu1.setText("+");
         addCpu1.addActionListener(new java.awt.event.ActionListener() {
@@ -1711,6 +1737,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addCpu1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addCpu1);
+        addCpu1.setBounds(290, 140, 25, 23);
 
         removeRam1.setText("-");
         removeRam1.addActionListener(new java.awt.event.ActionListener() {
@@ -1718,8 +1746,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeRam1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeRam1);
+        removeRam1.setBounds(250, 180, 23, 23);
 
         ramMakersApple.setText("0");
+        jPanel1.add(ramMakersApple);
+        ramMakersApple.setBounds(277, 180, 20, 17);
 
         addRam1.setText("+");
         addRam1.addActionListener(new java.awt.event.ActionListener() {
@@ -1727,6 +1759,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addRam1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addRam1);
+        addRam1.setBounds(300, 180, 25, 23);
 
         removePowSour1.setText("-");
         removePowSour1.addActionListener(new java.awt.event.ActionListener() {
@@ -1734,8 +1768,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removePowSour1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removePowSour1);
+        removePowSour1.setBounds(280, 220, 23, 23);
 
         powerSourceMakersApple.setText("0");
+        jPanel1.add(powerSourceMakersApple);
+        powerSourceMakersApple.setBounds(310, 220, 20, 17);
 
         addPowSour1.setText("+");
         addPowSour1.addActionListener(new java.awt.event.ActionListener() {
@@ -1743,6 +1781,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addPowSour1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addPowSour1);
+        addPowSour1.setBounds(330, 220, 25, 23);
 
         removeGraphCard1.setText("-");
         removeGraphCard1.addActionListener(new java.awt.event.ActionListener() {
@@ -1750,8 +1790,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeGraphCard1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeGraphCard1);
+        removeGraphCard1.setBounds(280, 260, 23, 23);
 
         graphCardMakersApple.setText("0");
+        jPanel1.add(graphCardMakersApple);
+        graphCardMakersApple.setBounds(307, 260, 20, 17);
 
         addGraphCard1.setText("+");
         addGraphCard1.addActionListener(new java.awt.event.ActionListener() {
@@ -1759,6 +1803,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addGraphCard1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addGraphCard1);
+        addGraphCard1.setBounds(340, 260, 25, 23);
 
         removeAssembler1.setText("-");
         removeAssembler1.addActionListener(new java.awt.event.ActionListener() {
@@ -1766,8 +1812,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeAssembler1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeAssembler1);
+        removeAssembler1.setBounds(170, 290, 23, 23);
 
         assemblersApple.setText("0");
+        jPanel1.add(assemblersApple);
+        assemblersApple.setBounds(207, 290, 10, 17);
 
         addAssembler1.setText("+");
         addAssembler1.addActionListener(new java.awt.event.ActionListener() {
@@ -1775,6 +1825,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addAssembler1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addAssembler1);
+        addAssembler1.setBounds(230, 290, 25, 23);
 
         removeDay.setText("-");
         removeDay.addActionListener(new java.awt.event.ActionListener() {
@@ -1782,8 +1834,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeDayActionPerformed(evt);
             }
         });
+        jPanel1.add(removeDay);
+        removeDay.setBounds(620, 320, 23, 23);
 
         day.setText("0");
+        jPanel1.add(day);
+        day.setBounds(660, 330, 50, 17);
 
         addDay.setText("+");
         addDay.addActionListener(new java.awt.event.ActionListener() {
@@ -1791,6 +1847,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addDayActionPerformed(evt);
             }
         });
+        jPanel1.add(addDay);
+        addDay.setBounds(720, 320, 25, 23);
 
         removeDeadline.setText("-");
         removeDeadline.addActionListener(new java.awt.event.ActionListener() {
@@ -1798,8 +1856,12 @@ public class Interfaz extends javax.swing.JFrame {
                 removeDeadlineActionPerformed(evt);
             }
         });
+        jPanel1.add(removeDeadline);
+        removeDeadline.setBounds(620, 360, 23, 23);
 
         deadline.setText("0");
+        jPanel1.add(deadline);
+        deadline.setBounds(670, 360, 20, 17);
 
         addDeadline.setText("+");
         addDeadline.addActionListener(new java.awt.event.ActionListener() {
@@ -1807,6 +1869,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addDeadlineActionPerformed(evt);
             }
         });
+        jPanel1.add(addDeadline);
+        addDeadline.setBounds(720, 360, 25, 23);
 
         removeCpu2.setText("-");
         removeCpu2.addActionListener(new java.awt.event.ActionListener() {
@@ -1814,8 +1878,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removeCpu2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeCpu2);
+        removeCpu2.setBounds(1100, 140, 23, 23);
 
+        motherBoardMakersHp.setForeground(new java.awt.Color(255, 255, 255));
         motherBoardMakersHp.setText("0");
+        jPanel1.add(motherBoardMakersHp);
+        motherBoardMakersHp.setBounds(1130, 100, 20, 17);
 
         addMotherBoard1.setText("+");
         addMotherBoard1.addActionListener(new java.awt.event.ActionListener() {
@@ -1823,6 +1892,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addMotherBoard1ActionPerformed(evt);
             }
         });
+        jPanel1.add(addMotherBoard1);
+        addMotherBoard1.setBounds(1140, 100, 25, 23);
 
         removeMotherBoard1.setText("-");
         removeMotherBoard1.addActionListener(new java.awt.event.ActionListener() {
@@ -1830,8 +1901,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removeMotherBoard1ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeMotherBoard1);
+        removeMotherBoard1.setBounds(1100, 100, 23, 23);
 
+        cpuMakersHp.setForeground(new java.awt.Color(255, 255, 255));
         cpuMakersHp.setText("0");
+        jPanel1.add(cpuMakersHp);
+        cpuMakersHp.setBounds(1130, 140, 20, 17);
 
         addCpu2.setText("+");
         addCpu2.addActionListener(new java.awt.event.ActionListener() {
@@ -1839,6 +1915,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addCpu2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addCpu2);
+        addCpu2.setBounds(1140, 140, 25, 23);
 
         removeRam2.setText("-");
         removeRam2.addActionListener(new java.awt.event.ActionListener() {
@@ -1846,8 +1924,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removeRam2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeRam2);
+        removeRam2.setBounds(1100, 180, 23, 23);
 
+        ramMakersHp.setForeground(new java.awt.Color(255, 255, 255));
         ramMakersHp.setText("0");
+        jPanel1.add(ramMakersHp);
+        ramMakersHp.setBounds(1130, 180, 20, 17);
 
         addRam2.setText("+");
         addRam2.addActionListener(new java.awt.event.ActionListener() {
@@ -1855,6 +1938,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addRam2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addRam2);
+        addRam2.setBounds(1140, 180, 25, 23);
 
         removePowSour2.setText("-");
         removePowSour2.addActionListener(new java.awt.event.ActionListener() {
@@ -1862,8 +1947,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removePowSour2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removePowSour2);
+        removePowSour2.setBounds(1102, 216, 23, 23);
 
+        powerSourceMakersHp.setForeground(new java.awt.Color(255, 255, 255));
         powerSourceMakersHp.setText("0");
+        jPanel1.add(powerSourceMakersHp);
+        powerSourceMakersHp.setBounds(1130, 220, 20, 17);
 
         addPowSour2.setText("+");
         addPowSour2.addActionListener(new java.awt.event.ActionListener() {
@@ -1871,6 +1961,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addPowSour2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addPowSour2);
+        addPowSour2.setBounds(1140, 210, 25, 23);
 
         removeGraphCard2.setText("-");
         removeGraphCard2.addActionListener(new java.awt.event.ActionListener() {
@@ -1878,8 +1970,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removeGraphCard2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeGraphCard2);
+        removeGraphCard2.setBounds(1100, 260, 23, 23);
 
+        graphCardMakersHp.setForeground(new java.awt.Color(255, 255, 255));
         graphCardMakersHp.setText("0");
+        jPanel1.add(graphCardMakersHp);
+        graphCardMakersHp.setBounds(1130, 260, 20, 17);
 
         addGraphCard2.setText("+");
         addGraphCard2.addActionListener(new java.awt.event.ActionListener() {
@@ -1887,6 +1984,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addGraphCard2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addGraphCard2);
+        addGraphCard2.setBounds(1140, 260, 25, 23);
 
         removeAssembler2.setText("-");
         removeAssembler2.addActionListener(new java.awt.event.ActionListener() {
@@ -1894,8 +1993,13 @@ public class Interfaz extends javax.swing.JFrame {
                 removeAssembler2ActionPerformed(evt);
             }
         });
+        jPanel1.add(removeAssembler2);
+        removeAssembler2.setBounds(1100, 290, 23, 23);
 
+        assemblersHp.setForeground(new java.awt.Color(255, 255, 255));
         assemblersHp.setText("0");
+        jPanel1.add(assemblersHp);
+        assemblersHp.setBounds(1130, 290, 20, 17);
 
         addAssembler2.setText("+");
         addAssembler2.addActionListener(new java.awt.event.ActionListener() {
@@ -1903,6 +2007,8 @@ public class Interfaz extends javax.swing.JFrame {
                 addAssembler2ActionPerformed(evt);
             }
         });
+        jPanel1.add(addAssembler2);
+        addAssembler2.setBounds(1140, 290, 25, 23);
 
         txt.setText("Guardar");
         txt.addActionListener(new java.awt.event.ActionListener() {
@@ -1910,239 +2016,12 @@ public class Interfaz extends javax.swing.JFrame {
                 txtActionPerformed(evt);
             }
         });
+        jPanel1.add(txt);
+        txt.setBounds(600, 410, 77, 23);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeAssembler1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(assemblersApple)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(addAssembler1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeGraphCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(graphCardMakersApple)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addGraphCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeCpu1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cpuMakersApple)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addCpu1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel4)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(removeMB2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(6, 6, 6))
-                                            .addComponent(jLabel6))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(motherBoardMakersApple, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(addMb2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(removeRam1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(ramMakersApple)
-                                                .addGap(0, 0, Short.MAX_VALUE))))
-                                    .addComponent(jLabel7))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(removePowSour1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(powerSourceMakersApple)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(addPowSour1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(addRam1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(42, 42, 42)
-                                        .addComponent(jLabel1)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 370, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeGraphCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(graphCardMakersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addGraphCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeCpu2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cpuMakersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(addCpu2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeAssembler2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(assemblersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(addAssembler2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(removeMotherBoard1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(motherBoardMakersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(addMotherBoard1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removeRam2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ramMakersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(addRam2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(removePowSour2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(powerSourceMakersHp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addPowSour2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(11, 11, 11))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(268, 268, 268)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel16))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(removeDay, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(day)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addDay, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(removeDeadline, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(deadline)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(addDeadline, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txt))
-                        .addContainerGap(715, Short.MAX_VALUE))))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(187, 187, 187)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(81, 81, 81))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel10)
-                    .addComponent(removeMB2)
-                    .addComponent(addMb2)
-                    .addComponent(motherBoardMakersApple)
-                    .addComponent(motherBoardMakersHp)
-                    .addComponent(addMotherBoard1)
-                    .addComponent(removeMotherBoard1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel11)
-                    .addComponent(removeCpu1)
-                    .addComponent(cpuMakersApple)
-                    .addComponent(addCpu1)
-                    .addComponent(removeCpu2)
-                    .addComponent(cpuMakersHp)
-                    .addComponent(addCpu2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel12)
-                    .addComponent(removeRam1)
-                    .addComponent(ramMakersApple)
-                    .addComponent(addRam1)
-                    .addComponent(removeRam2)
-                    .addComponent(ramMakersHp)
-                    .addComponent(addRam2))
-                .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel13)
-                    .addComponent(removePowSour1)
-                    .addComponent(powerSourceMakersApple)
-                    .addComponent(addPowSour1)
-                    .addComponent(removePowSour2)
-                    .addComponent(powerSourceMakersHp)
-                    .addComponent(addPowSour2))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel14)
-                    .addComponent(removeGraphCard1)
-                    .addComponent(graphCardMakersApple)
-                    .addComponent(addGraphCard1)
-                    .addComponent(removeGraphCard2)
-                    .addComponent(graphCardMakersHp)
-                    .addComponent(addGraphCard2))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel15)
-                    .addComponent(removeAssembler1)
-                    .addComponent(assemblersApple)
-                    .addComponent(addAssembler1)
-                    .addComponent(removeAssembler2)
-                    .addComponent(assemblersHp)
-                    .addComponent(addAssembler2))
-                .addGap(31, 31, 31)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(removeDay)
-                    .addComponent(day)
-                    .addComponent(addDay))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(removeDeadline)
-                    .addComponent(deadline)
-                    .addComponent(addDeadline))
-                .addGap(35, 35, 35)
-                .addComponent(txt)
-                .addContainerGap(281, Short.MAX_VALUE))
-        );
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Hp y Apple.jpg"))); // NOI18N
+        jPanel1.add(jLabel83);
+        jLabel83.setBounds(-50, -10, 1770, 730);
 
         jTabbedPane1.addTab("Configuration", jPanel1);
 
@@ -2151,9 +2030,8 @@ public class Interfaz extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(880, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1180, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2774,6 +2652,10 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
