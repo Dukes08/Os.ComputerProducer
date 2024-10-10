@@ -46,7 +46,7 @@ public class Director extends Thread{
     }
     
          @Override
-    public void start(){
+    public void run(){
         while(true) {
             try {  
                 paySalary();

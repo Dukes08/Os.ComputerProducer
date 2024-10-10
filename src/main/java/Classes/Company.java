@@ -19,6 +19,8 @@ public class Company extends Thread{
     private Assembler ensambladores; 
     private ProjectManager projectManager;
     private Director director;
+    
+    
     private int [] requirements;
     private int [] daysToFinishWork;
     private int [] initialAmount;
@@ -56,33 +58,34 @@ public class Company extends Thread{
     }
     
     public void costAnalytics() {
-        this.setCosts((int) (getMotherBoardMakers().getSalaryAcumulate() + getCpusMakers().getSalaryAcumulate() + getRamMakers().getSalaryAcumulate() + getPowerSourceMakers().getSalaryAcumulate() + getGraphicCardMakers().getSalaryAcumulate() + getEnsambladores().getSalaryAcumulate())); // director an pm classes missing       
+        this.costs = (int) (motherBoardMakers.getSalaryAcumulate() + cpusMakers.getSalaryAcumulate() + ramMakers.getSalaryAcumulate() + powerSourceMakers.getSalaryAcumulate() + graphicCardMakers.getSalaryAcumulate() + ensambladores.getSalaryAcumulate() + projectManager.getSalaryAcumulate() + director.getSalaryAcumulate()); // director an pm classes missing       
     }
     
     public void utilidadesTotales() {
-        this.setUtility(this.getRevenue() - this.getCosts());
+        this.utility = this.revenue - this.costs;
     }
     
     public void workersIntance(){
-        setMotherBoardMakers(new Worker(0, getDayDuration(), getInitialAmount()[0], getLogicHandler(), getMutex(), getDaysToFinishWork()));
-        setCpusMakers(new Worker(1, getDayDuration(), getInitialAmount()[1], getLogicHandler(), getMutex(), getDaysToFinishWork()));
-        setRamMakers(new Worker(2, getDayDuration(), getInitialAmount()[2], getLogicHandler(), getMutex(), getDaysToFinishWork()));
-        setPowerSourceMakers(new Worker(3, getDayDuration(), getInitialAmount()[3], getLogicHandler(), getMutex(), getDaysToFinishWork()));
-        setGraphicCardMakers(new Worker(4, getDayDuration(), getInitialAmount()[4], getLogicHandler(), getMutex(), getDaysToFinishWork()));
-        setEnsambladores(new Assembler(getDayDuration(), getInitialAmount()[5], getLogicHandler(), getMutex()));
+        motherBoardMakers = new Worker(0, dayDuration, initialAmount[0], logicHandler, mutex, daysToFinishWork);
+        cpusMakers = new Worker(1, dayDuration, initialAmount[1], logicHandler, mutex, daysToFinishWork);
+        ramMakers = new Worker(2, dayDuration, initialAmount[2], logicHandler, mutex, daysToFinishWork);
+        powerSourceMakers = new Worker(3, dayDuration, initialAmount[3], logicHandler, mutex, daysToFinishWork);
+        graphicCardMakers = new Worker(4, dayDuration, initialAmount[4], logicHandler, mutex, daysToFinishWork);
+        ensambladores = new Assembler(dayDuration, initialAmount[5], logicHandler, mutex);
         projectManager = new ProjectManager(dayDuration, mutex, mutex2, mutex3, this);
         director = new Director(dayDuration, logicHandler, mutex, mutex2, mutex3, this);
     }
     
     public void workersStart() {
-        getMotherBoardMakers().start();
-        getCpusMakers().start();
-        getRamMakers().start();
-        getPowerSourceMakers().start();
-        getGraphicCardMakers().start();
-        getEnsambladores().start();  
-        projectManager.start();  
-        director.start();
+//        System.out.println("Si llegue wey");
+          motherBoardMakers.start();
+          cpusMakers.start();
+          ramMakers.start();
+          powerSourceMakers.start();
+          graphicCardMakers.start();
+          ensambladores.start();  
+//        projectManager.start();  
+//        director.start();
     }
     
     public void addWorkers(int type) {
