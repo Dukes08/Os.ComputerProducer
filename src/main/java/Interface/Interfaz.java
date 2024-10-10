@@ -4,6 +4,7 @@
  */
 package Interface;
 import Classes.Company;
+import Classes.GraphManager;
 import javax.swing.*;
 import java.io.File;
 import java.io.PrintWriter;
@@ -36,7 +37,7 @@ public class Interfaz extends javax.swing.JFrame {
         JLabel[] pmLabelsApple = {pmStatusApple, costAppleLable, utilityAppleLable, appleDeadlineLable, appleDaysPassedLable, appleDaysPassedLable}; 
         apple.getProjectManager().setLabels(pmLabelsApple);
         
-        JLabel[] pmLabelsHp = {pmStatusHp, costHp, utilityHp, hpDeadlineLable, hpDaysPassedLable, hpDaysPassedLable}; 
+        JLabel[] pmLabelsHp = {pmStatusHp, costHp, utilityHp, hpDeadlineLable, hpDaysPassedLable, daysPassedGrafico}; 
         hp.getProjectManager().setLabels(pmLabelsHp);
         
         JLabel[] directorLabelsApple = {directorStatusApple, appleDeadlineLable, pmFaultsApple, applePmDiscountLable};
@@ -44,6 +45,9 @@ public class Interfaz extends javax.swing.JFrame {
         
         JLabel[] directorLabelsHp = {directorStatusHp, hpDeadlineLable, pmFaultsHp, hpPmDiscountLable};
         hp.getDirector().setLabels(directorLabelsHp);
+        
+        GraphManager grafico = new GraphManager(Grafico, apple, hp);
+        hp.getProjectManager().setGrafico(grafico);
         
         apple.workersStart();
         hp.workersStart();
@@ -94,6 +98,9 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
+        jLabel82 = new javax.swing.JLabel();
+        daysPassedGrafico = new javax.swing.JLabel();
+        Grafico = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
@@ -312,15 +319,49 @@ public class Interfaz extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel82.setText("Dias transcurridos: ");
+
+        daysPassedGrafico.setText("0");
+
+        Grafico.setBackground(new java.awt.Color(153, 255, 255));
+
+        javax.swing.GroupLayout GraficoLayout = new javax.swing.GroupLayout(Grafico);
+        Grafico.setLayout(GraficoLayout);
+        GraficoLayout.setHorizontalGroup(
+            GraficoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 710, Short.MAX_VALUE)
+        );
+        GraficoLayout.setVerticalGroup(
+            GraficoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 412, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1180, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(468, 468, 468)
+                        .addComponent(jLabel82)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(daysPassedGrafico))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(208, 208, 208)
+                        .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(262, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 625, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel82)
+                    .addComponent(daysPassedGrafico))
+                .addGap(18, 18, 18)
+                .addComponent(Grafico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Apple vs Hp", jPanel4);
@@ -954,7 +995,7 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(296, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Apple", jPanel2);
@@ -1597,7 +1638,7 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(301, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Hp", jPanel3);
@@ -2100,7 +2141,7 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(addDeadline))
                 .addGap(35, 35, 35)
                 .addComponent(txt)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(281, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Configuration", jPanel1);
@@ -2585,6 +2626,7 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Grafico;
     private javax.swing.JButton addAssembler1;
     private javax.swing.JButton addAssembler2;
     private javax.swing.JButton addAssembler6;
@@ -2635,6 +2677,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel cpuMakersQttySavedHp;
     private javax.swing.JLabel cpusMaxQttyApple;
     private javax.swing.JLabel day;
+    private javax.swing.JLabel daysPassedGrafico;
     private javax.swing.JLabel deadline;
     private javax.swing.JLabel directorAppleQtty;
     private javax.swing.JLabel directorAppleQtty2;
@@ -2730,6 +2773,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

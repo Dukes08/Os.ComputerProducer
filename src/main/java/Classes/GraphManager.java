@@ -33,8 +33,8 @@ public class GraphManager {
     private int counter = 1;
 
     public GraphManager(JPanel grafico, Company apple, Company hp) {
-        seriesApple = new XYSeries("Nickelodeon");
-        seriesHp = new XYSeries("Disney");
+        seriesApple = new XYSeries("Apple");
+        seriesHp = new XYSeries("Hp");
         this.grafico = grafico;
         this.apple = apple;
         this.hp = hp;
