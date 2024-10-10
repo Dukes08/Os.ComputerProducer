@@ -1,23 +1,21 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package Classes;
-
-import Interface.Interface;
+import Interface.MainInterface;
 import java.io.FileReader;
-
 /**
  *
- * @author hugoduque
+ * @author andresrivas
  */
 public class Main {
-    
-      /**
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
          try{
             FileReader lector = new FileReader ("DatosIniciales.txt");
             String contenido = "";
@@ -93,13 +91,14 @@ public class Main {
             daysToFinoshHp[4] = 2;
 
             Company hp = new Company(requirementsHp, daysToFinoshHp, initialQuantityHp, 11, dayDuration, 90000, 140000, deadline);
-            Interface main = new Interface(apple, hp, initialQuantityApple, initialQuantityHp);
-            main.show();
-//          
+           
+           MainInterface i = new MainInterface(apple, hp, initialQuantityApple, initialQuantityHp);
+           i.show();
 
         } catch (Exception e){
             e.printStackTrace( );
     
 }
     }
+    
 }
