@@ -98,30 +98,85 @@ public class Interfaz extends javax.swing.JFrame {
         assemblersHp = new javax.swing.JLabel();
         addAssembler2 = new javax.swing.JButton();
         txt = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel38 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        removeMB3 = new javax.swing.JButton();
-        motherBoardMakersApple1 = new javax.swing.JLabel();
-        addMb3 = new javax.swing.JButton();
+        motherBoardMakersQtty = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        removeCpu3 = new javax.swing.JButton();
-        cpuMakersApple1 = new javax.swing.JLabel();
-        addCpu3 = new javax.swing.JButton();
+        cpuMakersAppleQtty = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        removeRam3 = new javax.swing.JButton();
-        powerSourceMakersApple1 = new javax.swing.JLabel();
-        addRam3 = new javax.swing.JButton();
+        ramMakersAppleQtty = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        removePowSour3 = new javax.swing.JButton();
-        powerSourceMakersApple2 = new javax.swing.JLabel();
-        addPowSour3 = new javax.swing.JButton();
+        powerSourceMakersAppleQtty = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel45 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        graphiCardMakersAppleQtty = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        assemblersAppleQtty3 = new javax.swing.JLabel();
+        assemblersAppleQtty4 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        assemblersAppleQtty5 = new javax.swing.JLabel();
+        assemblersAppleQtty6 = new javax.swing.JLabel();
+        assemblersAppleQtty7 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        assemblersAppleQtty8 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        assemblersAppleQtty9 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        removeMB4 = new javax.swing.JButton();
+        motherBoardMakersQtty1 = new javax.swing.JLabel();
+        addMb4 = new javax.swing.JButton();
+        jLabel32 = new javax.swing.JLabel();
+        removeCpu4 = new javax.swing.JButton();
+        cpuMakersAppleQtty1 = new javax.swing.JLabel();
+        addCpu4 = new javax.swing.JButton();
+        jLabel33 = new javax.swing.JLabel();
+        removeRam4 = new javax.swing.JButton();
+        ramMakersAppleQtty1 = new javax.swing.JLabel();
+        addRam4 = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
+        removePowSour4 = new javax.swing.JButton();
+        powerSourceMakersAppleQtty1 = new javax.swing.JLabel();
+        addPowSour4 = new javax.swing.JButton();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        removeGraphiCard5 = new javax.swing.JButton();
+        addGraphiCard5 = new javax.swing.JButton();
+        graphiCardMakersAppleQtty1 = new javax.swing.JLabel();
+        removeAssembler6 = new javax.swing.JButton();
+        addAssembler6 = new javax.swing.JButton();
+        assemblersAppleQtty1 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        projectManagerAppleQtty1 = new javax.swing.JLabel();
+        directorAppleQtty1 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        directorStatus1 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        pmStatus2 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        pmFaults1 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        motherBoardMakersQtty2 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        cpuMakersAppleQtty2 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        cpuMakersAppleQtty3 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        cpuMakersAppleQtty4 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        cpuMakersAppleQtty5 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        cpuMakersAppleQtty6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -440,7 +495,7 @@ public class Interfaz extends javax.swing.JFrame {
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(motherBoardMakersApple)
+                                                .addComponent(motherBoardMakersApple, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(addMb2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -461,7 +516,7 @@ public class Interfaz extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(42, 42, 42)
                                         .addComponent(jLabel1)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 334, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel8)
@@ -631,149 +686,175 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Configuration", jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1144, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 486, Short.MAX_VALUE)
+        );
 
-        jLabel38.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jLabel38.setText("APPLE");
+        jTabbedPane1.addTab("Hp", jPanel3);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1144, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 486, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Apple vs Hp", jPanel4);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel18.setText("TRABAJADORES");
+        jLabel18.setText("WAREHOUSE");
 
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("Productores Placa Base:");
+        jLabel19.setText("Placas Base Guardadas:");
 
-        removeMB3.setText("-");
-        removeMB3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removeMB3ActionPerformed(evt);
-            }
-        });
-
-        motherBoardMakersApple1.setForeground(new java.awt.Color(255, 255, 255));
-        motherBoardMakersApple1.setText("0");
-
-        addMb3.setText("+");
-        addMb3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addMb3ActionPerformed(evt);
-            }
-        });
+        motherBoardMakersQtty.setForeground(new java.awt.Color(255, 255, 255));
+        motherBoardMakersQtty.setText("0");
 
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("Productores de CPU:");
+        jLabel20.setText("CPUs Guardados");
 
-        removeCpu3.setText("-");
-        removeCpu3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removeCpu3ActionPerformed(evt);
-            }
-        });
-
-        cpuMakersApple1.setForeground(new java.awt.Color(255, 255, 255));
-        cpuMakersApple1.setText("0");
-
-        addCpu3.setText("+");
-        addCpu3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addCpu3ActionPerformed(evt);
-            }
-        });
+        cpuMakersAppleQtty.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty.setText("0");
 
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Productores de memoria RAM:");
 
-        removeRam3.setText("-");
-        removeRam3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removeRam3ActionPerformed(evt);
-            }
-        });
-
-        powerSourceMakersApple1.setForeground(new java.awt.Color(255, 255, 255));
-        powerSourceMakersApple1.setText("0");
-
-        addRam3.setText("+");
-        addRam3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addRam3ActionPerformed(evt);
-            }
-        });
+        ramMakersAppleQtty.setForeground(new java.awt.Color(255, 255, 255));
+        ramMakersAppleQtty.setText("0");
 
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Productores de Fuente de Alimentacion:");
 
-        removePowSour3.setText("-");
-        removePowSour3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                removePowSour3ActionPerformed(evt);
-            }
-        });
-
-        powerSourceMakersApple2.setForeground(new java.awt.Color(255, 255, 255));
-        powerSourceMakersApple2.setText("0");
-
-        addPowSour3.setText("+");
-        addPowSour3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addPowSour3ActionPerformed(evt);
-            }
-        });
+        powerSourceMakersAppleQtty.setForeground(new java.awt.Color(255, 255, 255));
+        powerSourceMakersAppleQtty.setText("0");
 
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Productores de Tarjetas Graficas:");
+        jLabel23.setText("Tarjetas Graficas Guardadas:");
+
+        graphiCardMakersAppleQtty.setForeground(new java.awt.Color(255, 255, 255));
+        graphiCardMakersAppleQtty.setText("0");
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Computadores basicos:");
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Computadores con TarjetaG:");
+
+        assemblersAppleQtty3.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty3.setText("0");
+
+        assemblersAppleQtty4.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty4.setText("0");
+
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("Placa Base Max:");
+
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("CPUs Max:");
+
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("RAMs Max:");
+
+        assemblersAppleQtty5.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty5.setText("0");
+
+        assemblersAppleQtty6.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty6.setText("0");
+
+        assemblersAppleQtty7.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty7.setText("0");
+
+        jLabel56.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel56.setText("Power Source Max:");
+
+        assemblersAppleQtty8.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty8.setText("0");
+
+        jLabel57.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel57.setText("TarjetaG Max:");
+
+        assemblersAppleQtty9.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty9.setText("0");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(jLabel18))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel23)
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addGap(66, 66, 66)
+                                        .addComponent(jLabel18))
+                                    .addComponent(jLabel21)
+                                    .addComponent(jLabel22))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel20))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(motherBoardMakersQtty)
+                                    .addComponent(cpuMakersAppleQtty))
+                                .addGap(29, 29, 29))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(graphiCardMakersAppleQtty)
+                                    .addGroup(jPanel5Layout.createSequentialGroup()
+                                        .addGap(1, 1, 1)
+                                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(ramMakersAppleQtty)
+                                            .addComponent(powerSourceMakersAppleQtty))))
+                                .addGap(28, 28, 28))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                                .addComponent(assemblersAppleQtty4)
+                                .addGap(31, 31, 31))))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(removeMB3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(motherBoardMakersApple1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addMb3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(assemblersAppleQtty3)
+                        .addGap(30, 30, 30))
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(removeCpu3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(cpuMakersApple1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addCpu3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(removeRam3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(powerSourceMakersApple1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addRam3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(removePowSour3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(powerSourceMakersApple2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addPowSour3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel23)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel28)
+                            .addComponent(jLabel29))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(assemblersAppleQtty7)
+                            .addComponent(assemblersAppleQtty6)
+                            .addComponent(assemblersAppleQtty5))
+                        .addGap(32, 32, 32)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel57))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(assemblersAppleQtty9)
+                            .addComponent(assemblersAppleQtty8))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -783,97 +864,517 @@ public class Interfaz extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
-                    .addComponent(removeMB3)
-                    .addComponent(motherBoardMakersApple1)
-                    .addComponent(addMb3))
+                    .addComponent(motherBoardMakersQtty))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(removeCpu3)
-                    .addComponent(cpuMakersApple1)
-                    .addComponent(addCpu3))
+                    .addComponent(cpuMakersAppleQtty))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(removeRam3)
-                    .addComponent(powerSourceMakersApple1)
-                    .addComponent(addRam3))
+                    .addComponent(ramMakersAppleQtty))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(removePowSour3)
-                    .addComponent(powerSourceMakersApple2)
-                    .addComponent(addPowSour3))
+                    .addComponent(powerSourceMakersAppleQtty))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(graphiCardMakersAppleQtty))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(assemblersAppleQtty3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel23)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(assemblersAppleQtty4))
+                .addGap(98, 98, 98)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabel27)
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel28)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel29))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(assemblersAppleQtty7)
+                            .addComponent(jLabel56)
+                            .addComponent(assemblersAppleQtty8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(assemblersAppleQtty6)
+                                    .addComponent(jLabel57))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(assemblersAppleQtty5))
+                            .addComponent(assemblersAppleQtty9))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel30.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel30.setText("TRABAJADORES");
+
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("Productores Placa Base:");
+
+        removeMB4.setText("-");
+        removeMB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeMB4ActionPerformed(evt);
+            }
+        });
+
+        motherBoardMakersQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        motherBoardMakersQtty1.setText("0");
+
+        addMb4.setText("+");
+        addMb4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addMb4ActionPerformed(evt);
+            }
+        });
+
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("Productores de CPU:");
+
+        removeCpu4.setText("-");
+        removeCpu4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeCpu4ActionPerformed(evt);
+            }
+        });
+
+        cpuMakersAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty1.setText("0");
+
+        addCpu4.setText("+");
+        addCpu4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addCpu4ActionPerformed(evt);
+            }
+        });
+
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Productores de memoria RAM:");
+
+        removeRam4.setText("-");
+        removeRam4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeRam4ActionPerformed(evt);
+            }
+        });
+
+        ramMakersAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        ramMakersAppleQtty1.setText("0");
+
+        addRam4.setText("+");
+        addRam4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addRam4ActionPerformed(evt);
+            }
+        });
+
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("Productores de Fuente de Alimentacion:");
+
+        removePowSour4.setText("-");
+        removePowSour4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removePowSour4ActionPerformed(evt);
+            }
+        });
+
+        powerSourceMakersAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        powerSourceMakersAppleQtty1.setText("0");
+
+        addPowSour4.setText("+");
+        addPowSour4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPowSour4ActionPerformed(evt);
+            }
+        });
+
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Productores de Tarjetas Graficas:");
+
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("Ensambladores:");
+
+        removeGraphiCard5.setText("-");
+        removeGraphiCard5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeGraphiCard5ActionPerformed(evt);
+            }
+        });
+
+        addGraphiCard5.setText("+");
+        addGraphiCard5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGraphiCard5ActionPerformed(evt);
+            }
+        });
+
+        graphiCardMakersAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        graphiCardMakersAppleQtty1.setText("0");
+
+        removeAssembler6.setText("-");
+        removeAssembler6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeAssembler6ActionPerformed(evt);
+            }
+        });
+
+        addAssembler6.setText("+");
+        addAssembler6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAssembler6ActionPerformed(evt);
+            }
+        });
+
+        assemblersAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        assemblersAppleQtty1.setText("0");
+
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setText("Project Manager:");
+
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setText("Director:");
+
+        projectManagerAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        projectManagerAppleQtty1.setText("1");
+
+        directorAppleQtty1.setForeground(new java.awt.Color(255, 255, 255));
+        directorAppleQtty1.setText("1");
+
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setText("DirectorStatus:");
+
+        directorStatus1.setForeground(new java.awt.Color(255, 255, 255));
+        directorStatus1.setText("#");
+
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setText("PmStatus:");
+
+        pmStatus2.setForeground(new java.awt.Color(255, 255, 255));
+        pmStatus2.setText("#");
+
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText("Project Manager fouls:");
+
+        pmFaults1.setForeground(new java.awt.Color(255, 255, 255));
+        pmFaults1.setText("0");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel31)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(removeMB4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(motherBoardMakersQtty1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addMb4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(removeRam4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ramMakersAppleQtty1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addRam4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(removeCpu4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cpuMakersAppleQtty1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(addCpu4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(66, 66, 66)
+                                .addComponent(jLabel30)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel36)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(removeAssembler6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel35)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(removeGraphiCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(jLabel34)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                                        .addComponent(removePowSour4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(powerSourceMakersAppleQtty1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(addPowSour4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(graphiCardMakersAppleQtty1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(addGraphiCard5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel6Layout.createSequentialGroup()
+                                        .addComponent(assemblersAppleQtty1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(addAssembler6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(31, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel37)
+                                .addGap(18, 18, 18)
+                                .addComponent(projectManagerAppleQtty1))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(pmStatus2)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel39, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel40, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(directorAppleQtty1)
+                            .addComponent(directorStatus1))
+                        .addGap(19, 19, 19))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel42)
+                        .addGap(18, 18, 18)
+                        .addComponent(pmFaults1)
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(removeMB4)
+                    .addComponent(motherBoardMakersQtty1)
+                    .addComponent(addMb4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(removeCpu4)
+                    .addComponent(cpuMakersAppleQtty1)
+                    .addComponent(addCpu4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(removeRam4)
+                    .addComponent(ramMakersAppleQtty1)
+                    .addComponent(addRam4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(removePowSour4)
+                    .addComponent(powerSourceMakersAppleQtty1)
+                    .addComponent(addPowSour4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(removeGraphiCard5)
+                    .addComponent(addGraphiCard5)
+                    .addComponent(graphiCardMakersAppleQtty1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(removeAssembler6)
+                    .addComponent(addAssembler6)
+                    .addComponent(assemblersAppleQtty1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel37)
+                    .addComponent(projectManagerAppleQtty1)
+                    .addComponent(directorAppleQtty1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(directorStatus1)
+                    .addComponent(jLabel41)
+                    .addComponent(pmStatus2))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(pmFaults1))
+                .addGap(76, 76, 76))
+        );
+
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel43.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel43.setText("ANALITICAS");
+
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setText("Ventas Totales");
+
+        motherBoardMakersQtty2.setForeground(new java.awt.Color(255, 255, 255));
+        motherBoardMakersQtty2.setText("0");
+
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel46.setText("Costos:");
+
+        cpuMakersAppleQtty2.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty2.setText("0");
+
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel47.setText("Utilidad:");
+
+        cpuMakersAppleQtty3.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty3.setText("0");
+
+        jLabel48.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel48.setText("Dias transcurridos:");
+
+        cpuMakersAppleQtty4.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty4.setText("0");
+
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel49.setText("Deadline:");
+
+        cpuMakersAppleQtty5.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty5.setText("0");
+
+        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel50.setText("Descuento al Pm:");
+
+        cpuMakersAppleQtty6.setForeground(new java.awt.Color(255, 255, 255));
+        cpuMakersAppleQtty6.setText("0");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(jLabel43)
+                        .addContainerGap(160, Short.MAX_VALUE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpuMakersAppleQtty6))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpuMakersAppleQtty5))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(motherBoardMakersQtty2))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpuMakersAppleQtty4))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpuMakersAppleQtty3))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addComponent(jLabel46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cpuMakersAppleQtty2)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel43)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(motherBoardMakersQtty2))
+                .addGap(54, 54, 54)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(cpuMakersAppleQtty2))
+                .addGap(60, 60, 60)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(cpuMakersAppleQtty3))
+                .addGap(56, 56, 56)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(cpuMakersAppleQtty4))
+                .addGap(51, 51, 51)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(cpuMakersAppleQtty5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(cpuMakersAppleQtty6))
+                .addGap(15, 15, 15))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(443, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 292, Short.MAX_VALUE)
-                .addComponent(jLabel38)
-                .addGap(73, 73, 73))
+                .addGap(38, 38, 38)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(26, 26, 26)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(744, Short.MAX_VALUE)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(341, 341, 341)
-                .addComponent(jLabel38)
-                .addContainerGap(63, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(58, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(60, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("Apple", jPanel2);
-
-        jLabel45.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jLabel45.setText("HP");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(693, 693, 693)
-                .addComponent(jLabel45)
-                .addContainerGap(74, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(319, 319, 319)
-                .addComponent(jLabel45)
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Hp", jPanel3);
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 816, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 448, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Apple vs Hp", jPanel4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(223, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1156,37 +1657,53 @@ public class Interfaz extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtActionPerformed
 
-    private void removeMB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeMB3ActionPerformed
+    private void removeMB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeMB4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_removeMB3ActionPerformed
+    }//GEN-LAST:event_removeMB4ActionPerformed
 
-    private void addMb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMb3ActionPerformed
+    private void addMb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMb4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addMb3ActionPerformed
+    }//GEN-LAST:event_addMb4ActionPerformed
 
-    private void removeCpu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeCpu3ActionPerformed
+    private void removeCpu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeCpu4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_removeCpu3ActionPerformed
+    }//GEN-LAST:event_removeCpu4ActionPerformed
 
-    private void addCpu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCpu3ActionPerformed
+    private void addCpu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCpu4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addCpu3ActionPerformed
+    }//GEN-LAST:event_addCpu4ActionPerformed
 
-    private void removeRam3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeRam3ActionPerformed
+    private void removeRam4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeRam4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_removeRam3ActionPerformed
+    }//GEN-LAST:event_removeRam4ActionPerformed
 
-    private void addRam3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRam3ActionPerformed
+    private void addRam4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRam4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addRam3ActionPerformed
+    }//GEN-LAST:event_addRam4ActionPerformed
 
-    private void removePowSour3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removePowSour3ActionPerformed
+    private void removePowSour4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removePowSour4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_removePowSour3ActionPerformed
+    }//GEN-LAST:event_removePowSour4ActionPerformed
 
-    private void addPowSour3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPowSour3ActionPerformed
+    private void addPowSour4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPowSour4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addPowSour3ActionPerformed
+    }//GEN-LAST:event_addPowSour4ActionPerformed
+
+    private void removeGraphiCard5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeGraphiCard5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_removeGraphiCard5ActionPerformed
+
+    private void addGraphiCard5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGraphiCard5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addGraphiCard5ActionPerformed
+
+    private void removeAssembler6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeAssembler6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_removeAssembler6ActionPerformed
+
+    private void addAssembler6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAssembler6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addAssembler6ActionPerformed
 
     private int calculateQuantityApple(){
         int cantidadTotal = Integer.parseInt(motherBoardMakersApple.getText()) + Integer.parseInt(cpuMakersApple.getText()) + Integer.parseInt(ramMakersApple.getText()) + Integer.parseInt(powerSourceMakersApple.getText()) + Integer.parseInt(graphCardMakersApple.getText()) + Integer.parseInt(assemblersApple.getText());
@@ -1236,31 +1753,51 @@ public class Interfaz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addAssembler1;
     private javax.swing.JButton addAssembler2;
+    private javax.swing.JButton addAssembler6;
     private javax.swing.JButton addCpu1;
     private javax.swing.JButton addCpu2;
-    private javax.swing.JButton addCpu3;
+    private javax.swing.JButton addCpu4;
     private javax.swing.JButton addDay;
     private javax.swing.JButton addDeadline;
     private javax.swing.JButton addGraphCard1;
     private javax.swing.JButton addGraphCard2;
+    private javax.swing.JButton addGraphiCard5;
     private javax.swing.JButton addMb2;
-    private javax.swing.JButton addMb3;
+    private javax.swing.JButton addMb4;
     private javax.swing.JButton addMotherBoard1;
     private javax.swing.JButton addPowSour1;
     private javax.swing.JButton addPowSour2;
-    private javax.swing.JButton addPowSour3;
+    private javax.swing.JButton addPowSour4;
     private javax.swing.JButton addRam1;
     private javax.swing.JButton addRam2;
-    private javax.swing.JButton addRam3;
+    private javax.swing.JButton addRam4;
     private javax.swing.JLabel assemblersApple;
+    private javax.swing.JLabel assemblersAppleQtty1;
+    private javax.swing.JLabel assemblersAppleQtty3;
+    private javax.swing.JLabel assemblersAppleQtty4;
+    private javax.swing.JLabel assemblersAppleQtty5;
+    private javax.swing.JLabel assemblersAppleQtty6;
+    private javax.swing.JLabel assemblersAppleQtty7;
+    private javax.swing.JLabel assemblersAppleQtty8;
+    private javax.swing.JLabel assemblersAppleQtty9;
     private javax.swing.JLabel assemblersHp;
     private javax.swing.JLabel cpuMakersApple;
-    private javax.swing.JLabel cpuMakersApple1;
+    private javax.swing.JLabel cpuMakersAppleQtty;
+    private javax.swing.JLabel cpuMakersAppleQtty1;
+    private javax.swing.JLabel cpuMakersAppleQtty2;
+    private javax.swing.JLabel cpuMakersAppleQtty3;
+    private javax.swing.JLabel cpuMakersAppleQtty4;
+    private javax.swing.JLabel cpuMakersAppleQtty5;
+    private javax.swing.JLabel cpuMakersAppleQtty6;
     private javax.swing.JLabel cpuMakersHp;
     private javax.swing.JLabel day;
     private javax.swing.JLabel deadline;
+    private javax.swing.JLabel directorAppleQtty1;
+    private javax.swing.JLabel directorStatus1;
     private javax.swing.JLabel graphCardMakersApple;
     private javax.swing.JLabel graphCardMakersHp;
+    private javax.swing.JLabel graphiCardMakersAppleQtty;
+    private javax.swing.JLabel graphiCardMakersAppleQtty1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1277,11 +1814,35 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1291,34 +1852,45 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel motherBoardMakersApple;
-    private javax.swing.JLabel motherBoardMakersApple1;
     private javax.swing.JLabel motherBoardMakersHp;
+    private javax.swing.JLabel motherBoardMakersQtty;
+    private javax.swing.JLabel motherBoardMakersQtty1;
+    private javax.swing.JLabel motherBoardMakersQtty2;
+    private javax.swing.JLabel pmFaults1;
+    private javax.swing.JLabel pmStatus2;
     private javax.swing.JLabel powerSourceMakersApple;
-    private javax.swing.JLabel powerSourceMakersApple1;
-    private javax.swing.JLabel powerSourceMakersApple2;
+    private javax.swing.JLabel powerSourceMakersAppleQtty;
+    private javax.swing.JLabel powerSourceMakersAppleQtty1;
     private javax.swing.JLabel powerSourceMakersHp;
+    private javax.swing.JLabel projectManagerAppleQtty1;
     private javax.swing.JLabel ramMakersApple;
+    private javax.swing.JLabel ramMakersAppleQtty;
+    private javax.swing.JLabel ramMakersAppleQtty1;
     private javax.swing.JLabel ramMakersHp;
     private javax.swing.JButton removeAssembler1;
     private javax.swing.JButton removeAssembler2;
+    private javax.swing.JButton removeAssembler6;
     private javax.swing.JButton removeCpu1;
     private javax.swing.JButton removeCpu2;
-    private javax.swing.JButton removeCpu3;
+    private javax.swing.JButton removeCpu4;
     private javax.swing.JButton removeDay;
     private javax.swing.JButton removeDeadline;
     private javax.swing.JButton removeGraphCard1;
     private javax.swing.JButton removeGraphCard2;
+    private javax.swing.JButton removeGraphiCard5;
     private javax.swing.JButton removeMB2;
-    private javax.swing.JButton removeMB3;
+    private javax.swing.JButton removeMB4;
     private javax.swing.JButton removeMotherBoard1;
     private javax.swing.JButton removePowSour1;
     private javax.swing.JButton removePowSour2;
-    private javax.swing.JButton removePowSour3;
+    private javax.swing.JButton removePowSour4;
     private javax.swing.JButton removeRam1;
     private javax.swing.JButton removeRam2;
-    private javax.swing.JButton removeRam3;
+    private javax.swing.JButton removeRam4;
     private javax.swing.JButton txt;
     // End of variables declaration//GEN-END:variables
 }
