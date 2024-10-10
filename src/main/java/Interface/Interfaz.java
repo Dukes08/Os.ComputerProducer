@@ -426,25 +426,25 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel29.setText("RAMs Max:");
 
         ramsMaxQttyApple.setForeground(new java.awt.Color(255, 255, 255));
-        ramsMaxQttyApple.setText("0");
+        ramsMaxQttyApple.setText("55");
 
         cpusMaxQttyApple.setForeground(new java.awt.Color(255, 255, 255));
-        cpusMaxQttyApple.setText("0");
+        cpusMaxQttyApple.setText("20");
 
         motherBoardMaxQttyApple.setForeground(new java.awt.Color(255, 255, 255));
-        motherBoardMaxQttyApple.setText("0");
+        motherBoardMaxQttyApple.setText("25");
 
         jLabel56.setForeground(new java.awt.Color(255, 255, 255));
         jLabel56.setText("Power Source Max:");
 
         powerSouerceMaxQttyApple.setForeground(new java.awt.Color(255, 255, 255));
-        powerSouerceMaxQttyApple.setText("0");
+        powerSouerceMaxQttyApple.setText("35");
 
         jLabel57.setForeground(new java.awt.Color(255, 255, 255));
         jLabel57.setText("TarjetaG Max:");
 
         graphiCardMaxQttyApple.setForeground(new java.awt.Color(255, 255, 255));
-        graphiCardMaxQttyApple.setText("0");
+        graphiCardMaxQttyApple.setText("10");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -474,7 +474,7 @@ public class Interfaz extends javax.swing.JFrame {
                                             .addComponent(cpuMakersAppleQttySavedApple)
                                             .addComponent(motherBoardMakersQttySavedApple)
                                             .addComponent(graphiCardMakersAppleQttySavedApple))
-                                        .addGap(0, 12, Short.MAX_VALUE))
+                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(ramMakersAppleQttySavedApple, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -981,7 +981,7 @@ public class Interfaz extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1058,25 +1058,25 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel72.setText("RAMs Max:");
 
         assemblersAppleQtty12.setForeground(new java.awt.Color(255, 255, 255));
-        assemblersAppleQtty12.setText("0");
+        assemblersAppleQtty12.setText("55");
 
         assemblersAppleQtty13.setForeground(new java.awt.Color(255, 255, 255));
-        assemblersAppleQtty13.setText("0");
+        assemblersAppleQtty13.setText("20");
 
         assemblersAppleQtty14.setForeground(new java.awt.Color(255, 255, 255));
-        assemblersAppleQtty14.setText("0");
+        assemblersAppleQtty14.setText("25");
 
         jLabel73.setForeground(new java.awt.Color(255, 255, 255));
         jLabel73.setText("Power Source Max:");
 
         assemblersAppleQtty15.setForeground(new java.awt.Color(255, 255, 255));
-        assemblersAppleQtty15.setText("0");
+        assemblersAppleQtty15.setText("35");
 
         jLabel74.setForeground(new java.awt.Color(255, 255, 255));
         jLabel74.setText("TarjetaG Max:");
 
         assemblersAppleQtty16.setForeground(new java.awt.Color(255, 255, 255));
-        assemblersAppleQtty16.setText("0");
+        assemblersAppleQtty16.setText("10");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1628,7 +1628,7 @@ public class Interfaz extends javax.swing.JFrame {
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addContainerGap(130, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
